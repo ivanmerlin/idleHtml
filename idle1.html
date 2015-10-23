@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<style type="text/css">
+		#clickArea{
+			width:800px;
+			height:500px;
+			margin:auto auto;
+		}
+		.money{
+			position: absolute;
+			left: 500px;
+			top: 200px;
+			font-size: 30px;
+		}
+		.upgrade{
+			position: relative;
+			float: left;
+			left:10px;
+			top:10px;
+			width: 200px;
+			height: 100px;
+			font-size: 25px;
+		}
+		.upgrade a{
+			font-size: 10px;
+		}
+		.info{
+			position: relative;
+			float: left;
+			width: 300px;
+			height: 200px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="clickArea" >
+		<div class="money" id="moneyId">0</div> 
+	</div>
+	<div class="buttonArea">
+		<button class="upgrade" id="clickUpgrade">upgradeClick<br><a>cost:<a id="clickUpCostText"></a></a></button>		
+		<button class="upgrade" id="idleUpgrade">upgradeIdle<br><a>cost:<a id="idleUpCostText"></a></a></button>		
+
+	</div>
+	<div class="info">
+		<ul>
+			<li>money per second:<a id="moneyPerSecond">0</a> </li>
+			<li>money per second:<a id="moneyPerClick"></a> </li>
+		</ul>	
+	</div>
+</body>
+
+<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="./js/click.js"></script>
+</html>
